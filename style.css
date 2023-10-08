@@ -215,7 +215,7 @@ footer {
 }
 
 /* Estilos para pantallas de dispositivos móviles */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   /* Estilos para el encabezado */
   header {
     padding: 50px 0;
