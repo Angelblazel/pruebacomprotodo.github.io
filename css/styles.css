@@ -216,33 +216,15 @@ footer {
 
 /* Estilos para pantallas de dispositivos móviles */
 @media only screen and (max-width: 767px) {
-  /* Estilos para el encabezado */
-  header {
-    padding: 50px 0;
-  }
-  
-  header img {
-    max-width: 100%;
-    border: 10px solid #000;
-  }
-  
-  header p {
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  /* Estilos para los botones de redes sociales */
-  .right a {
-    padding: 10px 12px;
-  }
-  
   /* Estilos para los contenedores de las columnas */
   .container {
     margin: 0 auto;
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
+
   /* Estilos para las columnas */
   .column {
     flex-basis: 100%;
@@ -255,11 +237,15 @@ footer {
     padding: 10px;
     box-sizing: border-box;
   }
-  
-  .column:last-child {
+
+  .column:nth-child(odd) {
     margin-right: 0;
   }
-  
+
+  .column:nth-child(even) {
+    margin-left: 0;
+  }
+
   /* Estilos para las imágenes */
   .image {
     display: block;
