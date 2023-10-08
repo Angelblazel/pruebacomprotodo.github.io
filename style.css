@@ -1,12 +1,14 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-  background: linear-gradient(to bottom,
-  #121212, #131214, #161722, #272330, #171727,
-  #1d1a36, #1b183b, #11112b, #1b123a, #1b133d);
   font-family: "Georgia", serif;
   font-size: 16px;
   color: #ffffff;
+  background: linear-gradient(to bottom,
+    #121212, #131214, #161722, #272330, #171727,
+    #1d1a36, #1b183b, #11112b, #1b123a, #1b133d);
 }
 
+/* Estilos para el encabezado (header) */
 header {
   text-align: center;
   padding: 70px 0;
@@ -15,15 +17,15 @@ header {
 header img {
   display: block;
   margin: 0 auto;
+  border: 15px solid #000;
 }
-
 
 header p {
   text-align: center;
-  font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  text-align: justify; /* Justifica el texto */
-  margin-left: 20px; /* Añade espacio en el margen izquierdo */
-  margin-right: 20px; /* Añade espacio en el margen derecho */
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1 {
@@ -31,9 +33,12 @@ h1 {
   text-align: center;
 }
 
-p {
+/* Estilos para los párrafos y listas */
+p, ul, li {
   font-size: 18px;
-  text-align: justify; /* Justifica el texto */
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 ul {
@@ -46,23 +51,25 @@ li {
   font-size: 16px;
   margin-bottom: 10px;
 }
+
+/* Estilos para la sección de columnas */
 .container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .column {
   flex-basis: calc(33.33% - 10px);
   margin-right: 10px;
   margin-bottom: 20px;
-  text-align: justify; /* Justifica el texto */
-  margin-left: 5px; /* Añade espacio en el margen izquierdo */
-  margin-right: 5px; /* Añade espacio en el margen derecho */
-  max-width: 550px; /* Alto deseado de la imagen */
-  background-color: #000; /* Color de fondo negro */
-  padding: 10px; /* Añade un relleno de 10px */
-  box-sizing: border-box; /* Incluye el relleno en el ancho y alto */
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: 550px;
+  background-color: #000;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .column:last-child {
@@ -71,20 +78,17 @@ li {
 
 .image {
   display: block;
-  width: 530px; /* Ancho deseado */
-  height: 402.5px; /* Alto deseado */
+  width: 100%;
+  height: auto;
   margin-bottom: 10px;
-  margin-left: 0px; /* Añade espacio en el margen izquierdo */
-  margin-right: 0px; /* Añade espacio en el margen derecho */
 }
 
 .column:hover {
-  background-color: #333; /* Color de fondo gris oscuro */
-  cursor: pointer; /* Cambia el cursor a una mano */
+  background-color: #333;
+  cursor: pointer;
 }
 
-
-
+/* Estilos para la barra de navegación superior */
 .topnav {
   position: fixed;
   top: 0;
@@ -117,7 +121,6 @@ li {
   color: #333;
 }
 
-
 .button-image {
   display: block;
   width: 30px;
@@ -125,8 +128,9 @@ li {
   margin: 0 auto;
 }
 
+/* Estilos para el pie de página */
 footer {
-  background-color: #000; /* Agrega un fondo negro */
+  background-color: #000;
   color: #fff;
   padding: 20px;
   text-align: left;
@@ -136,4 +140,11 @@ footer {
   text-align: center;
   margin-left: 100px;
   margin-right: auto;
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+  margin-top: 30px;
+  background-color: #3498db;
+  padding: 10px;
 }
