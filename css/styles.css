@@ -71,6 +71,7 @@ li {
   background-color: #000; /* Color de fondo negro */
   padding: 10px; /* Añade un relleno de 10px */
   box-sizing: border-box; /* Incluye el relleno en el ancho y alto */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra 3D */
 }
 
 .column:last-child {
