@@ -178,18 +178,34 @@ footer {
     display: block;
     text-align: center;
   }
-
+  .left {
+    float: left;
+    padding: 14px 16px;
+    color: #fff;
+  }
   .right {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-  
+
   /* Estilos para los botones de la barra de navegación */
   .right a {
     display: block;
     margin: 10px auto;
+  }
+  .right a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  /* Estilos para el botón de imagen */
+  .button-image {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
   }
 
   /* Estilos para los contenedores de las columnas */
