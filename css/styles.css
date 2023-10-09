@@ -179,6 +179,13 @@ footer {
     text-align: center;
   }
 
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
   /* Estilos para los botones de la barra de navegación */
   .right a {
     display: block;
