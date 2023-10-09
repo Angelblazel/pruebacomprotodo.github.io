@@ -275,10 +275,11 @@ footer {
     background-color: #000;
     padding: 10px;
     box-sizing: border-box;
+    display: none; /* Oculta todas las columnas */
   }
 
-  .column:last-child {
-    margin-right: 0;
+  .column:first-child {
+    display: block; /* Muestra la primera columna */
   }
 
   /* Estilos para las imágenes */
